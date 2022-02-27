@@ -1,0 +1,16 @@
+.homepage{
+    display: grid;
+    /* grid-template-rows: [top-video] 1fr [end-video start-selection] 1fr [end-selection start-highlight] 1fr [end-highlight]; */
+    grid-template-rows: 1fr;
+    grid-template-columns: [video-start] 1fr [video-end cards-start] 1fr [card-end];
+}
+
+.homepage-highlight-card{
+    grid-row: start-highlight/end-highlihgt;
+    grid-column: cards-start/card-end;
+}
+
+.homepage-video-section{
+    grid-row: top-video/end-video;
+    grid-column: video-start/video-end;
+}

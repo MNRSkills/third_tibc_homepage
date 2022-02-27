@@ -1,0 +1,9 @@
+.App {
+    background-color: #231F1F;
+    color: white;
+}
+
+
+.card-details{
+     background: linear-gradient(90deg, rgba(42,138,181,1) 0%, rgba(93,129,153,1) 35%, rgba(104,107,110,1) 100%);
+}

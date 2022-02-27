@@ -1,0 +1,23 @@
+.layout{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: minmax(4%, 10%)[left-side] 1fr [right-side] minmax(4%, 10%);
+    grid-template-rows: [nav-start] 150px [nav-end body-row-start] 1fr [body-row-end] 250px [footer-end];
+}
+
+
+.layout-navbar{
+    grid-column: left-side/right-side;
+    grid-row: nav-start/nav-end;
+}
+
+.layout-children {
+    grid-column: left-side/right-side;
+    grid-row: body-row-start/body-row-end;
+}
+
+.layout-footer {
+    grid-column: left-side/right-side;
+    grid-row: footer-start/footer-end;
+}
